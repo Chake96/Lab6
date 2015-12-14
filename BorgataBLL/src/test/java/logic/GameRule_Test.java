@@ -15,6 +15,7 @@ import org.junit.Test;
 
 import domain.GameRuleDomainModel;
 import logic.GameRuleBLL;
+import pokerBase.Rule;
 
 public class GameRule_Test {
 
@@ -42,6 +43,14 @@ public class GameRule_Test {
 		gr = GameRuleBLL.getRules();
 		
 		assertTrue(gr.size() > 0);
+		
+	}
+	
+	@Test //very difficult to know how to test these things....
+	public void holdemTest(){
+		GameRuleDomainModel grdm = new GameRuleDomainModel();
+		grdm.setRULEID(1);
+		Rule rle = new Rule(grdm);
 		
 	}
 	
