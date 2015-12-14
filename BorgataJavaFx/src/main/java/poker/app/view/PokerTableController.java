@@ -11,7 +11,7 @@ import java.util.UUID;
 
 import org.apache.commons.math3.util.Combinations;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
+//import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
 
 import domain.GameRuleDomainModel;
 import enums.eGame;
@@ -92,7 +92,7 @@ public class PokerTableController {
 	private ImageView imgTransCardP4 = new ImageView();
 	private ImageView imgTransCardCommon = new ImageView();
 	
-	private static Rule rle = new Rule(eGame.FiveStud);
+	private static Rule rle = new Rule(null);
 
 	public static void setRle(Rule rle) {
 		PokerTableController.rle = rle;

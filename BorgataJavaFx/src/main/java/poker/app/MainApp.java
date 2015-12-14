@@ -81,7 +81,7 @@ public class MainApp extends Application {
 		    rootController = loader.getController();
 			
 			
-		    rootController.setMainApp(this);
+		    rootController.initialize(location, resources); //unsure of what these mean or why they are needed
 
 			primaryStage.show();
 		} catch (IOException e) {
